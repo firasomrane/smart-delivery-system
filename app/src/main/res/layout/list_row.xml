@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        />
+        
+	</LinearLayout>
+    
+	<!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+
+	<ImageView
+		android:id="@+id/product_thumb"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="5dp"
+		android:gravity="center_vertical" />
+
+	<RelativeLayout
+		android:id="@+id/top_icon_detail"
+		android:layout_width="wrap_content"
+		android:layout_height="100dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="11dp"
+		android:orientation="vertical"
+		android:layout_alignParentTop="true"
+		android:layout_alignLeft="@+id/product_thumb"
+		android:layout_alignStart="@+id/product_thumb"
+		android:layout_marginStart="11dp">
+
+		<TextView
+			android:id="@+id/item_short_desc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="marquee"
+			android:focusable="false"
+			android:freezesText="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:text=" Item description"
+			android:textColor="@android:color/darker_gray"
+			android:textSize="15sp"
+			android:layout_above="@+id/remove_item"
+			android:layout_toRightOf="@+id/item_price"
+			android:layout_toEndOf="@+id/item_price"
+			android:layout_marginLeft="41dp"
+			android:layout_marginStart="41dp"
+			android:layout_marginBottom="10dp"/>
+
+		<TextView
+			android:id="@+id/item_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:ellipsize="marquee"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:freezesText="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:text="Rs 20"
+			android:textColor="@android:color/background_dark"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/remove_item"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="38dp"
+			android:layout_toLeftOf="@+id/add_item"
+			android:background="@drawable/round_text_remove_item"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:text="-"
+			android:textColor="#FF0000"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/iteam_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="15dp"
+			android:layout_toLeftOf="@+id/add_item"
+			android:ellipsize="marquee"
+			android:focusable="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:gravity="center_vertical|center_horizontal"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:text="0"
+			android:textColor="@android:color/background_dark"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/add_item"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginRight="25dp"
+			android:layout_toLeftOf="@+id/add_to_panel"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:layout_marginBottom="10dp"
+			android:background="@drawable/round_text_add_item"
+			android:gravity="center_vertical|center_horizontal"
+			android:text="+"
+			android:textColor="#ff669900"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<Button
+			android:id="@+id/add_to_panel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:text="Add to panel" />
+
+	</RelativeLayout>
+
+
+</RelativeLayout>

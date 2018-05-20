@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/order_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order time:"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/order_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/05/2018"
+        android:layout_toRightOf="@+id/order_time_title"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/delevery_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_time_title"
+        android:text="delevery time:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/delivery_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15/06/2018"
+        android:layout_below="@+id/order_time_title"
+        android:layout_toRightOf="@+id/order_time_title"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/delevery_price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delevery price:"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/delevery_time_title"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/delivery_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 Dt"
+        android:layout_toRightOf="@+id/delevery_price_title"
+        android:layout_below="@+id/delevery_time_title"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/delivery_price_text_dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dt"
+        android:layout_toRightOf="@+id/delivery_price_text"
+        android:layout_below="@+id/delevery_time_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
